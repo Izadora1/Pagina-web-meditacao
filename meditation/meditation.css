@@ -1,22 +1,25 @@
-* {
-	margin: 0;
-	padding: 0;
+body {
+	background-color: var(--color-blue-500);
 }
 
-body {
-	background-color: #203D63;
-	font-family: 'Open Sans', 'Poppins', sans-serif;
+.main {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-evenly;
+
+	height: calc(100vh - 64px);
+	width: 100%;
 }
 
 .trilha {
 	position: relative;
-	padding: 10px; /* modificar */
+	padding: 10px;
 }
 
 .trilha__titulo {
 	color: #549EFF;
 	text-align: center;
-	margin-top: 100px;
 }
 
 .circulo {
@@ -30,11 +33,13 @@ body {
 	margin-top: 40px;
 }
 
-.circulo, .circulo2, .circulo3 {
+.circulo, 
+.circulo__2,
+.circulo__3 {
 	border-radius: 50%;
 }
 
-.circulo2 {
+.circulo__2 {
 	background-color: #549EFF;
 	width: 100px;
 	height: 100px;
@@ -44,7 +49,7 @@ body {
 	justify-content: center;
 }
 
-.circulo3 {
+.circulo__3 {
 	background-color: #A0C8FF;
 	width: 50px;
 	height: 50px;
@@ -57,11 +62,14 @@ body {
 	padding: 40px; /* modificar */
 }
 
+.player {
+	width: 100%;
+}
+
 .linha {
 	background-color: #34629F;
 	height: 2px;
 	width: 100%;
-	margin-bottom: 2%;
 }
 .acima{
 	background-color: #549EFF;
@@ -81,9 +89,6 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-  }
-  
-.fa-solid {
 	background-color: #34629F;
 	border-radius: 50%;
 }
